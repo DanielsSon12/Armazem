@@ -1,6 +1,6 @@
 
 body{
-    background-image:url(imgSite/soft2.jpg);
+    background-color:rgb(255, 193, 241);
     background-attachment:fixed;
     background-size:125%;
     background-repeat:no-repeat;
@@ -13,14 +13,14 @@ h1{
     padding-left:450px; 
     text-decoration-line:underline;
     font-size:xx-large;
-    color: rgb(98, 0, 255);
+    color:purple;
 }
 
 p{
     font-size: x-large;
     padding-left:150px;
     font-style:initial;
-    color: rgb(7, 93, 163);
+    color: purple;
 }
 
 #veja{
@@ -28,12 +28,12 @@ p{
     font-style: oblique;
     text-decoration-line:underline;
     font-size:xx-large;
-    color: rgb(98, 0, 255);
+    color: purple;
 }
 
 #lab01{
     text-decoration-line:underline;
-    color:rgb(7, 93, 163);
+    color:purple;
     font-size:xx-large;
 }
 
@@ -61,9 +61,11 @@ div{
 
 #lab02{
     text-decoration-line:underline;
-    color: rgb(7, 93, 163);
-    font-size:xx-large;   
+    color:purple;
+    font-size:xx-large;
 }
+       
+
 
 a{
     font-size:x-large;
