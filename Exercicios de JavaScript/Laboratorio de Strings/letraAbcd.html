@@ -14,12 +14,24 @@
         <hr><br>
     </header>
     <main>
-        <label for="palavraFrase">Insira a frase: </label>
-        <input type="text" id="frase"><br>
-        <button onclick="numeroPTotalN()">Número de palavras e total de letras</button><hr>
-        <p id="nTresult"></p><br>
-        <button onclick="ocorrencia()">Ocorrência de palavras</button><hr>
-        <p id="ocoresult"></p><br>
+        <label for="frase">Insira a frase: </label><br>
+        <input type="text" id="frase"><br><br>
+        <button onclick="numeroPTotalN()">Número de palavras e total de letras</button>
+        <p id="nTresult"></p><br><hr>
+        <button onclick="ocorrencia()">Ocorrência de palavras</button>
+        <p id="ocoresult"></p><br><hr>
+
+        <label for="procure">Procure pela palavra que quer Marcar: </label>
+        <input type="text" id="procure"><br><br>
+        <button onclick="marcar()">Marcação de palavras</button><br>
+        <p id="marqueresult"></p><hr><br>
+
+        <label for="substitui">Qual palavra deve ser substituida? </label> 
+        <input type="text" id="substitui"><br><br>
+        <label for="novaPalavra">Digite a nova palavra: </label>
+        <input type="text" id="novaPalavra"><br><br>
+        <button onclick="substituicao()">Substituição de palavra</button><br>
+        <p id="substituiresult"></p><hr><br>
     </main>
 </body>
 </html>
