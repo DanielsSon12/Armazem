@@ -2,7 +2,7 @@
 function numeroPTotalN(){
     let result = document.getElementById('nTresult');
     let texto = document.getElementById('frase').value;
-    let quantLetra = texto.replace(/\s/g, '').length; // o replace() retorna uma nova string com algumas ou todas as correspondências de um padrão substituídas por um determinado caractere(s)
+    let quantLetra = texto.replace(/\s/g, '').length; // o replace() retorna uma nova string com algumas ou todas as correspondências de um padrão substituídas por um determinado caractere(s), e o (/\s/g, '') junto com o length é pra ver o comprimento da string desprezando os espaços entre as palavras, ou seja, vai trocar os espaços por '' (vazio)
     let quantPalavra = texto.split(' ').length; // o split() divide uma string em uma lista ordenada de substrings, coloca essas substrings em um array e retorna o array
     result.innerHTML = "O texto digitado tem " + quantLetra + " letras, e " + quantPalavra + " palavras.";
 }
