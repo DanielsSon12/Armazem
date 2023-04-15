@@ -1,5 +1,7 @@
+//EXERCICIOS DE FORA DO PDF DO LABORATÓRIO DE STRINGS LETRA A, B, C, D, E.
 
-function numeroPTotalN(){
+let texto = document.getElementById('frase').value;
+function numeroPTotalN(){// (A)
     let result = document.getElementById('nTresult');
     let texto = document.getElementById('frase').value;
     let quantLetra = texto.replace(/\s/g, '').length; // o replace() retorna uma nova string com algumas ou todas as correspondências de um padrão substituídas por um determinado caractere(s), e o (/\s/g, '') junto com o length é pra ver o comprimento da string desprezando os espaços entre as palavras, ou seja, vai trocar os espaços por '' (vazio)
@@ -8,7 +10,7 @@ function numeroPTotalN(){
 }
 
 
-function ocorrencia(){
+function ocorrencia(){// (B)
     let result2 = document.getElementById('ocoresult');
     let texto = document.getElementById('frase').value;
 
@@ -30,7 +32,7 @@ function ocorrencia(){
     result2.textContent = JSON.stringify(contagemPalavra, null, 2);
 }
 
-function marcar(){
+function marcar(){// (C)
     let result3 = document.getElementById('marqueresult');
     let texto = document.getElementById('frase').value;
     let Marcacao = document.getElementById('procure').value;
@@ -41,7 +43,7 @@ function marcar(){
     result3.innerHTML = Marcado;
 }
 
-function substituicao(){
+function substituicao(){// (D)
     let result4 = document.getElementById('substituiresult');
     let texto = document.getElementById('frase').value;
     let substi = document.getElementById('substitui').value;
@@ -51,3 +53,45 @@ function substituicao(){
 
     result4.innerHTML = novoTexto;
 }
+
+//EXERCICIOS DO PDF : LABORATÓRIO DE JAVASCRIPT - STRINGS E DATAS
+
+function inverte(){// (1)
+    let result5 = document.getElementById('inverteresult');
+    let texto = document.getElementById('frase').value;
+
+    let inverter = texto.split("").reverse().join("");
+
+    result5.innerHTML = inverter;
+}
+
+function vogaisnegrito(){// (2)
+    let result6 = document.getElementById('vogaisresult');
+    let texto = document.getElementById('frase').value;
+
+    let encontraVogal = texto.replace(/[aeiou]/gi, `<b>$&</b>`)// O $& vai pegar todas as vogais do texto encontradas e colocar em negrito; O modificador 'g' significa que a expressão regular deve ser aplicada globalmente (ou seja, para todas as ocorrências no texto) e o modificador 'i' faz a busca ser case insensitive.
+
+    result6.innerHTML = encontraVogal;
+}
+
+function numeroOcorrencia(){// (3)
+    let result7 = document.getElementById('numeroresult');
+    let texto = document.getElementById('frase').value;
+
+    let ocorrenciaPalavra = texto.split(/\W+/);
+    let armazenaPalavra = {};
+
+    for(let i = 0; i<ocorrenciaPalavra.length; i++)
+    {
+        let ocorrenPalavra = ocorrenciaPalavra[i];
+        
+        if(armazenaPalavra[ocorrenPalavra])
+        {
+            armazenaPalavra[ocorrenPalavra]++;
+        }else armazenaPalavra[ocorrenPalavra] = 1;
+    }
+    
+    result7.textContent = JSON.stringify(armazenaPalavra, null, 2);
+}
+
+

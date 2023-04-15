@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./StringsEDatas.js" defer></script>
+    <title>Letras A, B, C, D</title>
+</head>
+<body>
+    <header>
+        <h1>Laboratorio de Strings e Datas</h1>
+        <h2>Leitor de texto</h2>
+        <hr>
+    </header>
+    <main>
+        <div>
+            <h1>Fora do PDF:</h1><br>
+            <label for="frase">Insira a frase: </label><br>
+            <input type="text" id="frase"><br><br>
+
+            <button onclick="numeroPTotalN()">Número de palavras e total de letras</button>
+            <p id="nTresult"></p><br><hr>
+
+            <button onclick="ocorrencia()">Ocorrência de palavras</button>
+            <p id="ocoresult"></p><br><hr>
+
+            <label for="procure">Procure pela palavra que quer Marcar: </label>
+            <input type="text" id="procure"><br><br>
+            <button onclick="marcar()">Marcação de palavras</button><br>
+            <p id="marqueresult"></p><hr><br>
+
+            <label for="substitui">Qual palavra deve ser substituida? </label> 
+            <input type="text" id="substitui"><br><br>
+            <label for="novaPalavra">Digite a nova palavra: </label>
+            <input type="text" id="novaPalavra"><br><br>
+            <button onclick="substituicao()">Substituição de palavra</button><br>
+            <p id="substituiresult"></p><hr><br>
+        </div>
+
+        <div>
+            <h1>Atividades do PDF:</h1><br>
+            <hr>
+            <button onclick="inverte()">Inverte caracteres</button>
+            <p id="inverteresult"></p>
+            <hr>
+            <button onclick="vogaisnegrito()">Vogais em negrito</button>
+            <p id="vogaisresult"></p>
+            <hr>
+            <button onclick="numeroOcorrencia()">Verifica a ocorrencia das palavras</button>
+            <p id="numeroresult"></p>
+        </div>
+    </main>
+</body>
+</html>
