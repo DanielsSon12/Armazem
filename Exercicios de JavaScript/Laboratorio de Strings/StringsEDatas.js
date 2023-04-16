@@ -94,4 +94,46 @@ function numeroOcorrencia(){// (3)
     result7.textContent = JSON.stringify(armazenaPalavra, null, 2);
 }
 
+function palavraOcorrencia(){// (4)
+    let result8 = document.getElementById('palavraresult');
+    let texto = document.getElementById('frase').value;
 
+    let palavras = texto.split(/\W+/);
+    let contagem = {};
+
+    for(let i = 0; i < palavras.length; i++ )
+    {
+        let palavra = palavras[i];
+        
+        if(contagem[palavra])
+        {
+            contagem[palavra]++;
+        }else contagem[palavra] = 1;
+    }
+
+    let palavrafrequente = "";
+    let ocorrencia = 0;
+
+    for(let palavra in contagem)
+    {
+        if(contagem[palavra] > ocorrencia)
+        {
+            palavrafrequente = palavra;
+            ocorrencia = contagem[palavra];
+        }
+    }
+
+    //result8.innerHTML = "A palavra mais frequente é " + palavrafrequente + " se repetindo " + ocorrencia + " vez(es)";
+    result8.innerHTML = `A palavra mais frequente é <b>${palavrafrequente}</b> se repetindo <b>${ocorrencia}</b> vez(es)`;
+}
+
+function substi(){// (5)
+    let result9 = document.getElementById('subsresult');
+    let texto = document.getElementById('frase').value;
+    let subs = document.getElementById('subs').value;
+    let newPala = document.getElementById('newPalavra').value;
+
+    let newTexto = texto.replace(new RegExp(subs, 'g'), newPala);
+
+    result4.innerHTML = newTexto;
+}
