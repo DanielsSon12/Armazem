@@ -100,6 +100,8 @@ function palavraOcorrencia(){// (4)
 
     let palavras = texto.split(/\W+/);
     let contagem = {};
+    let quantpalavras = texto.split(' ').length;
+    let quantletras = texto.replace(/\s/g, '').length;
 
     for(let i = 0; i < palavras.length; i++ )
     {
@@ -124,7 +126,7 @@ function palavraOcorrencia(){// (4)
     }
 
     //result8.innerHTML = "A palavra mais frequente é " + palavrafrequente + " se repetindo " + ocorrencia + " vez(es)";
-    result8.innerHTML = `A palavra mais frequente é <b>${palavrafrequente}</b> se repetindo <b>${ocorrencia}</b> vez(es)`;
+    result8.innerHTML = `A palavra mais frequente é <b>${palavrafrequente}</b> se repetindo <b>${ocorrencia}</b> vez(es), o texto possui <b>${quantletras} letras</b>, e <b>${quantpalavras} palavras</b>.`;
 }
 
 function substi(){// (5)
@@ -135,5 +137,75 @@ function substi(){// (5)
 
     let newTexto = texto.replace(new RegExp(subs, 'g'), newPala);
 
-    result4.innerHTML = newTexto;
+    result9.innerHTML = newTexto;
+}
+
+function dataPorExtenso(){// (6)
+    let dataNascimento = document.getElementById('dataNascimento').value;
+
+    let data = dataNascimento.split("/");
+    let dia = data[0];
+    let mes = data[1];
+    let ano = data[2];
+
+    let nomemeses = ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
+
+    let meses = nomemeses[mes - 1];
+
+    let dataExtenso = dia + " de " + meses + " de " + ano;
+
+    document.getElementById('extensoresult').innerHTML = dataExtenso;
+}
+
+function verificadorSenha(){// (7)
+    // Pega o elemento da senha
+    let senha = document.getElementById('senha');
+    // Pega o conteúdo da senha
+    let conteudoDaSenha = senha.value;
+    let senhaCor = document.getElementById('senharesult');
+
+    //O método 'match()' é usado para verificar se uma string atende a um padrão especifico de expressão regular, permitindo que você valide strings com base em regras personalizadas.
+    //A sintaxe '?=.' é um tipo de expressão regular que permite verificar se a string contém um padrão específico, sem realmente fazer parte do padrão de correspondência.
+    if(conteudoDaSenha.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#!$%&*()-+=.])[0-9a-zA-Z@#!$%&*()-+=.]{8,}$/))
+    {
+        //'classList' é uma propriedade dos elementos do DOM em JavaScript que permite adicionar, remover e verificar a presença de classes CSS em um elemento.
+        //senha forte
+        senha.classList.remove("fraca");
+        senha.classList.remove("moderada");
+        senha.classList.add("forte");
+        senhaCor.innerHTML = "<b> Senha forte </b>";
+        senhaCor.style.color = "green";
+        
+    }else if(conteudoDaSenha.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/))
+        {
+        //senha moderada
+            senha.classList.remove("fraca");
+            senha.classList.remove("forte");
+            senha.classList.add("moderada");
+            senhaCor.innerHTML = "<b> Senha moderada </b>";
+            senhaCor.style.color = "orange";
+        }
+    else{
+        //senha fraca
+        senha.classList.remove("moderada");
+        senha.classList.remove("forte");
+        senha.classList.add("fraca");
+        senhaCor.innerHTML = "<b> Senha fraca </b>";
+        senhaCor.style.color = "red";
+    }
+}
+
+function inverteFrase(){// (8)
+    let frase = document.getElementById('inverte').value;
+    let result10 = document.getElementById('inverterresultado');
+
+    //divide a frase em palavras
+    let palavras = frase.split(" ");
+    //inverte a ordem das palavras no array
+    palavras.reverse();
+
+    //Vai juntar as palavras em uma única string novamente, separadas por espaços "join(" ") = vai entrar com espaços entre as palavras"
+    let fraseNova = palavras.join(" ");
+    
+    result10.innerHTML = fraseNova;
 }
