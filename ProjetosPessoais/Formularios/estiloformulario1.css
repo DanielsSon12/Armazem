@@ -1,12 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,300;1,400;1,500&family=Rajdhani:wght@300;400;600&display=swap');
 /*
+Cores pro gradiant:
 #C38154
 #FFC26F
+
+#FF9551
+#FF4A4A
+#FEB139
 */
 
 *{
     text-align: center;
+    font-family: 'Geologica', sans-serif;
+    letter-spacing: 0.7px;
 }
 
 body{
-    background-color: #FFC26F ;
+    background: linear-gradient(to right, #FF4A4A, #FF9551);
+    max-width: 100%;
+}
+
+h2{
+    position: relative;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.div-form .formulario{
+    max-width: 100%;
+    position: relative;
+    margin-top: 50%;
+}
+
+.div-form{
+    display: inline-block;
+    max-width: 100%;
+    
+}
+
+.formulario{
+    background-color: white;
+    padding: 83px;
+    height: 285px;
+    border-radius: 20px;
+    width: 63%;
+
+}
+
+label{
+    display: flex;
+    padding: 5px;
+    font-weight:bold;
+}
+
+input{
+    height: 8%;
+    width: 110%;
+    border-radius: 20px;
+    border-color:rgb(173, 171, 171);
+}
+
+::placeholder{
+    text-align: left;
+    font-family:'Josefin Sans', sans-serif;
+}
+
+.btn-cad{
+    background: linear-gradient(to right, #FF4A4A,#FEB139);
+    display: flexbox;
+    border-style: none;
+    border-radius: 20px;
+    width: 115%;
+    height: 10%;
+    color: white;
+    font-weight: lighter;
+    margin-top: 10px;    
 }
