@@ -1,2 +1,2 @@
-# O Armazem é onde coloco tudo que já fiz no curso técnico de informática (minha bagunça).
+# O Armazem é onde coloco tudo que já fiz relacionado a programação(minha bagunça).
 
