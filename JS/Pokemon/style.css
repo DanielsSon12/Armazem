@@ -1,0 +1,13 @@
+.pokedex-titulo h1{
+    color: rgb(255, 218, 72);
+   font-family: 'Pokemon Font', sans-serif;
+   -webkit-text-stroke: 4px rgb(1, 112, 215);
+   font-size: 70px;
+   text-align: center;
+}
+
+@font-face {
+    font-family: 'Pokemon Font';
+    src: url(pokemon/Pokemon\ Solid.ttf) format('ttf'),
+         url(pokemon/Pokemon\ Solid.ttf) format('woff');
+}

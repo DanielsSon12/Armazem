@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+</head>
+<body>
+    <header>
+        <h1>Salário do professor</h1>
+        <p>Insira os dados</p>
+    </header>
+    <main>
+        <form action="processaDados.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" required><br>
+
+            <label for="quantidadehoras">Quantidade de Horas:</label>
+            <input type="number" name="quantidadehoras" min="4" max="30" required><br>
+            
+            <label for="valorhoraaula">Valor da hora da aula:</label>
+            <input type="number" name="valorhoraaula" min="20.00" required><br>
+
+            <input type="submit" value="Enviar" ><input type="reset" value="Limpar">
+        </form>
+    </main>
+</body>
+</html>
