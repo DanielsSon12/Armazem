@@ -1,13 +1,38 @@
+@font-face {
+    font-family: 'Pokemon Font';
+    src: url(pokemon/Pokemon\ Solid.ttf) format('ttf'),
+         url(pokemon/Pokemon\ Solid.ttf) format('woff');
+}
+
 .pokedex-titulo h1{
     color: rgb(255, 218, 72);
    font-family: 'Pokemon Font', sans-serif;
    -webkit-text-stroke: 4px rgb(1, 112, 215);
    font-size: 70px;
    text-align: center;
+   width: 100%;
 }
 
-@font-face {
-    font-family: 'Pokemon Font';
-    src: url(pokemon/Pokemon\ Solid.ttf) format('ttf'),
-         url(pokemon/Pokemon\ Solid.ttf) format('woff');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pokemon Font', sans-serif;
+    
+}
+
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(108, 189, 255), white);
+    min-height: 100vh;
+}
+
+main{
+    display: inline-block;
+    margin-top: 3%;
+}
+
+.pokedex-img{
+    width: 100%;
+
 }
