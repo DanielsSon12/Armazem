@@ -30,9 +30,79 @@ body{
 main{
     display: inline-block;
     margin-top: 3%;
+    padding: 15px;
+    position: relative;
 }
 
 .pokedex-img{
     width: 100%;
+    max-width: 425px;
+}
 
+.pokemon-img{
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    height: 10%;
+}
+
+.pokemon-dados{
+    position: absolute;
+    font-weight: 600;
+    color: gray;
+    top: 50%;
+    right: 27%;
+    font-size: clamp(8px, 5vw, 25px); /*SINTAXE DO CLAMP: font-size: clamp(min, desejavel, max);*/
+}
+
+.pokemon-nome{
+    color: rgb(26, 26, 26);
+    text-transform: capitalize; /*o text-transform possui diversas opções de alteração de texto, uma delas sendo o capitalize (deixa a primeira letra da palavra maiuscula)*/
+}
+
+.form-pesquisa{
+    position: absolute;
+    width: 65%;
+    top: 64%;
+    left: 12%;
+}
+
+.input-pesquisa{
+    width: 100%;
+    padding: 2%;
+    outline: none; /*Tira a borda azul de seleção da caixa de pesquisa*/
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: 600;
+    color: rgb(26, 26, 26);
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 5px 0 #5f5f5f, -4px 7px 0 black; /*SINTAXE BOX-SHADOW: box-shadow: x, y tamanho da sombra cor da sombra;*/
+}
+
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 15px;
+}
+
+.button{
+    width: 50%;
+    padding: 3%;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: rgb(43, 43, 43);
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 black;
+}
+
+.button:active{
+    box-shadow: inset -4px 4px 0 black;
+    font-size: 0.9rem;
 }
