@@ -8,7 +8,7 @@
     color: rgb(255, 218, 72);
    font-family: 'Pokemon Font', sans-serif;
    -webkit-text-stroke: 4px rgb(1, 112, 215);
-   font-size: 70px;
+   font-size: clamp(80px, 5vw, 250px);
    text-align: center;
    width: 100%;
 }
@@ -23,14 +23,17 @@
 
 body{
     text-align: center;
-    background: linear-gradient(to bottom, rgb(108, 189, 255), white);
+    background-image: url(./fotos/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100vw;
+/*  background: linear-gradient(to bottom, rgb(108, 189, 255), white);*/
     min-height: 100vh;
 }
 
 main{
     display: inline-block;
-    margin-top: 3%;
-    padding: 15px;
+    padding: 13.5px;
     position: relative;
 }
 
@@ -43,7 +46,7 @@ main{
     position: absolute;
     bottom: 55%;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-79.5%, 20%);
     height: 10%;
 }
 
@@ -91,8 +94,8 @@ main{
 }
 
 .button{
-    width: 50%;
-    padding: 3%;
+    width: 65%;
+    padding: 2%;
     border: 2px solid black;
     border-radius: 8px;
     font-size: clamp(8px, 5vw, 1rem);
