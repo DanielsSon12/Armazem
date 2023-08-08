@@ -16,9 +16,13 @@ let procuraPokemon = 1;
 //Essa função vai pescar os dados do pokemon da API
 const pegaPokemon = async (pokemon) => {
     const APIResposta = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`); 
+    // fetch() é um mecanismo que permite que você faça chamadas de AJAX
+    // fetch() é um mecanismo assíncrono, logo a função deve ser assíncrona também, por isso o async antes da declaração do parâmetro pokemon
+    // A expressão await faz a execução de uma função async pausar, para esperar pelo retorno da Promise , e resume a execução da função async quando o valor da Promise é resolvido
 
     if (APIResposta.status == 200) {
         const dados = await APIResposta.json();
+        // O json() é por causa dos dados da API que estão em json
         return dados;   
     }
 }
