@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: auto;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body{
+    background: linear-gradient(rgb(116, 202, 255), rgb(144, 238, 255), rgb(116, 202, 255));
+}
+
+.tabela-jogo{
+    border: 1px solid;
+    width: 650px;
+    height: 650px;
+    border-collapse: collapse;
+}
+
+.linha, .elemento{
+    border: 1px solid black;
+}
+
+h1{
+    text-align: center;
+    font-size: 450%;
+    margin-top: 10px;
+    color: rgb(54, 87, 255);
+    text-shadow: -3px 4px 3px black;
+    letter-spacing: 3.5px;
+}
+
