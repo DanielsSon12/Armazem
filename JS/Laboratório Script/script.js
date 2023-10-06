@@ -60,15 +60,44 @@ document.addEventListener('DOMContentLoaded', function(){
 //ATIDADE 3
 async function enviarComentario(comentario) {
 
-    // Sua implementação aqui usando AJAX
-    
+    const parametros = {
+      method: 'POST', // Ou 'PUT', 'PATCH', etc., dependendo da sua API
+      headers: {
+        'Content-Type': 'application/json', // Defina o tipo de conteúdo apropriado
+      },
+      body: JSON.stringify(comentario), // Converta o objeto de comentário em JSON
+    };
+
+    // Substitua a URL abaixo pela URL do endpoint da API do servidor de comentários
+    const url = 'https://sua-api.com/comentarios';
+
+    try {
+      const response = await fetch(url, parametros);
+
+      if (!response.ok) {
+        // Se a resposta não for bem-sucedida, rejeite a Promise com uma mensagem de erro
+        throw new Error(`Erro ao enviar o comentário: ${response.status}`);
+      }
+
+      // Aguarde a resposta ser processada e retorne uma mensagem de sucesso
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      // Se ocorrer um erro durante a solicitação, rejeite a Promise com o erro
+      throw error;
     }
+  }
     
-    enviarComentario('Este é um ótimo artigo!')
+    const novoComentario = {
+      autor: 'Programador',
+      texto: 'Este é um ótimo artigo!',
+    };
+
+    enviarComentario(novoComentario)
     
-    .then(() => {
+    .then((resposta) => {
     
-    console.log('Comentário enviado com sucesso.');
+    console.log('Comentário enviado com sucesso:', resposta);
     
     })
     
@@ -77,50 +106,3 @@ async function enviarComentario(comentario) {
     console.error('Erro ao enviar comentário:', erro);
     
     });
-
-/*
-async function enviarComentario(comentario) {
-  // Construa os parâmetros da solicitação AJAX, dependendo da sua estrutura de servidor
-  const parametros = {
-    method: 'POST', // Ou 'PUT', 'PATCH', etc., dependendo da sua API
-    headers: {
-      'Content-Type': 'application/json', // Defina o tipo de conteúdo apropriado
-    },
-    body: JSON.stringify(comentario), // Converta o objeto de comentário em JSON
-  };
-
-  // Substitua a URL abaixo pela URL do endpoint da API do servidor de comentários
-  const url = 'https://sua-api.com/comentarios';
-
-  try {
-    const response = await fetch(url, parametros);
-
-    if (!response.ok) {
-      // Se a resposta não for bem-sucedida, rejeite a Promise com uma mensagem de erro
-      throw new Error(`Erro ao enviar o comentário: ${response.status}`);
-    }
-
-    // Aguarde a resposta ser processada e retorne uma mensagem de sucesso
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    // Se ocorrer um erro durante a solicitação, rejeite a Promise com o erro
-    throw error;
-  }
-}
-
-// Exemplo de uso da função
-const novoComentario = {
-  autor: 'Nome do Autor',
-  texto: 'Este é um novo comentário.',
-};
-
-enviarComentario(novoComentario)
-  .then((resposta) => {
-    console.log('Comentário enviado com sucesso:', resposta);
-  })
-  .catch((erro) => {
-    console.error('Erro ao enviar o comentário:', erro);
-  });
-
-*/
