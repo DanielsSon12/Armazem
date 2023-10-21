@@ -102,11 +102,11 @@ document.addEventListener("DOMContentLoaded", function () {
         pedido.forEach(item => {
             //Adiciona o preço unitário em lista
             let precoUnitarioItemList = document.createElement('li');
-            precoUnitarioItemList.textContent = `(${item.name}): ${item.price}`;
+            precoUnitarioItemList.textContent = `${item.name}: ${item.price}`;
             listaPrecoUnitario.appendChild(precoUnitarioItemList);
 
             //Soma o preço total (mantendo como string)
-            precoTotal += parseFloat(item.price.replace(',', '.')) || 0;
+            precoTotal += parseFloat(item.price.replace('$', ' ')) || 0;
         });
 
         let desconto = precoTotal * 0.1;
@@ -118,10 +118,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 <span>${qtdComprada}</span>
             </h3>
             <h3>Preço Unitário:
-                <ul>${listaPrecoUnitario.innerHTML}</ul>
+                <ul class="listaPrecoUni">${listaPrecoUnitario.innerHTML}</ul>
             </h3>
             <h3>Total:
-                <span>${totalComDesconto.toFixed(2)}</span>
+                <span>$${totalComDesconto.toFixed(2)}</span>
                 <span class="taxaServico">(+10% de taxa de serviço)</span>
             </h3>`;
     }
@@ -134,10 +134,10 @@ document.addEventListener("DOMContentLoaded", function () {
     //ao dar refresh na pagina, o limpaStorage é acionado
     window.addEventListener('beforeunload', limpaStorage);
 
-    // Carrega o cardápio
+    //Carrega o cardápio
     pegaAPI(API_url, cardapio);
 
-    // Atualiza a exibição do pedido
+    //Atualiza a exibição do pedido
     attPedido();
 
 });

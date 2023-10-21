@@ -51,7 +51,7 @@ h4{
 }
 */
 
-/*______________ITENS DO CARDAPIO______________*/
+/*______________CARDAPIO______________*/
 #cardapio {
     background-color: rgb(88, 88, 88);
     max-width: 100%;
@@ -59,8 +59,32 @@ h4{
     margin: auto;
     padding: 0.8em;
     width: 95%;
+    height: 29em;
+    overflow-y: auto;
     border-radius: 1em;
     margin-top: -0.5em;
+}
+
+#cardapio::-webkit-scrollbar{
+    width: 1.5em;
+}
+
+#cardapio::-webkit-scrollbar-thumb{
+    background-color: rgb(43, 43, 43);
+    border-radius: 1em;
+}
+
+#cardapio::-webkit-scrollbar-track{
+    background-color: rgb(167, 167, 167);
+    border-radius: 1em;
+}
+
+/*______________SCROLLBAR DO PREÇO UNITÁRIO______________*/
+.listaPrecoUni{
+    max-height: 5em;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
 }
 
 /*______________LISTA DE PEDIDOS______________*/
@@ -94,4 +118,34 @@ h4{
     border: 2px solid black;
     border-radius: 0.5em;
     padding: 0.6em;
+}
+
+/*_______________ESTILIZAÇÃO DAS DIVS DO CARDPAIO E DOS ITENS_________________*/
+
+.div-item{
+    display:inline-flex;
+}
+
+.div-item{
+    max-width: 100%;
+    max-height: 100%;
+    width: 13em;
+    height: 20em;
+    display:inline-flex;
+    padding: 3em;
+    flex-direction: column;
+    margin-left: 2.2em;
+    margin-top: 2em;
+    background-color: rgb(155, 155, 155);
+    border-radius: 1em;
+    align-items: center;
+}
+
+/*_________________IMAGEM DE CADA ITEM_________________*/
+.imgItem{
+    max-width: 100%;
+    max-height: 100%;
+    width: 15em;
+    height: 15em;
+    border-radius: 20em;
 }
