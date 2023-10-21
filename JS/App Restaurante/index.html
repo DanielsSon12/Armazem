@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" method="get"></script>
     <title>Restaurante</title>
 </head>
 <body>
@@ -18,16 +19,11 @@
     <main>
 <!--___________________CARDAPIO______________________-->
         <h1>CARDAPIO</h1>
-        <section class="cardapio">
-                <figure class="img-Nome">
-                    <img src="" alt="error">
-                    <figcaption class="nomeItem"><!--Nome do Item--></figcaption>
-                </figure>
-                <div class="Detalhes">
-                    <!--Detalhes do item-->
-                    <span class="item-price"><!--Preço do item--></span>
-                </div>
-        </section>
+        <!--<h4>*CLIQUE NA IMAGEM DO ITEM QUE DESEJA PARA ADICIONA-LO AO PEDIDO*</h4>-->
+        <div id="cardapio">
+            <div id="pedido"></div>
+            <div id="mensagemPedido"></div>
+        </div>
 
 <!--_______________LISTA DOS PEDIDOS__________________-->
         <footer class="infoPedido">

@@ -52,7 +52,7 @@ const limpaStorage = () => {
     sessionStorage.removeItem('carrinho');
 }
 
-//aacionando a função ao dar refresh na pagina
+//acionando a função ao dar refresh na pagina
 window.addEventListener('beforeunload', limpaStorage);
 
 //verificar se há dados no carrinho no sessionStorage ao carregar a página
