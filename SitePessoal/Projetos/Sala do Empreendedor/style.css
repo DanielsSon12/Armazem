@@ -1,0 +1,2273 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    margin: 0 auto;
+    background-color: #f8faff;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+/*______Primeira Nav______*/
+.nav-1 {
+    background-color: #084775;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding: -10px;
+}
+
+.nav-1 > .parte-principal{
+    display: flex;
+    padding-left: 10px;
+}
+
+.nav-1 > .parte-principal > a, p{
+    padding: 5px;
+    margin: auto;
+}
+
+.nav-1 > .parte-principal > a > img {
+    max-width: 26px;
+}
+
+.nav-1 > .parte-principal{
+    color: white;
+}
+
+.nav-1 > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nav-1 > ul > li {
+    margin: 0 auto;
+    display: block;
+    padding-left: 30px;
+}
+
+.nav-1 > ul > li > a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+/*______Botão de Login______*/
+.nav-1 > .btn-Login > a{
+    padding: 5px;
+    margin: auto;
+}
+
+.nav-1 > .btn-Login {
+    display: flex;
+    padding-left: 10px;
+}
+
+.btn-Login > img {
+    padding: 5px;
+    max-width: 18px;
+    margin: 0 auto;
+}
+
+.btn-Login > a{
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-Login {
+    background: linear-gradient(rgb(223, 146, 0, 1), rgb(241, 176, 55));
+    border-radius: 5px;
+    display: block;
+    margin: 15px;
+    padding-right: 10px;
+}
+
+/*______DropDown Menu*/
+.dropdown-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    display: none;
+    padding: 10px;
+
+} 
+
+.dropdown-menu > p {
+    color: #343434;
+    font-size: 1rem;
+    font-weight:bolder;
+}
+
+.dropdown-menu > ul {
+    list-style: none;
+}
+
+.dropdown-menu > ul > li {
+    display: block;
+}
+
+.dropdown-menu > ul > li > a{
+    display: block;
+    text-decoration: none;
+    color: #343434;
+    font-size: 0.8rem;
+    padding: 7px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*______Itens do dropdown______*/
+.dropdown-menu > ul > .item1 {
+    background: url(./imgs/pata-de-cachorro.png) no-repeat left;
+    background-size: 14px 14px;
+    padding-left: 14px;
+}
+
+.dropdown-menu > ul > .item2 {
+    background: url(./imgs/museu.png) no-repeat left;
+    background-size: 14px 14px;
+    padding-left: 14px;
+}
+.dropdown-menu > ul > .item3 {
+    background: url(./imgs/museu.png) no-repeat left;
+    background-size: 14px 14px;
+    padding-left: 14px;
+}
+.dropdown-menu > ul > .item4 {
+    background: url(./imgs/lampada.png) no-repeat left;
+    background-size: 14px 14px;
+    padding-left: 14px;
+}
+.dropdown-menu > ul > .item5 {
+    background: url(./imgs/carrinho-de-bagagem.png) no-repeat left;
+    background-size: 14px 14px;
+    padding-left: 14px;
+}
+.dropdown-menu > ul > .item6 {
+    background: url(./imgs/mapa.png) no-repeat left;
+    background-size: 14px 14px;
+    padding-left: 14px;
+}
+
+/*______Segunda Nav______*/
+.nav-2 {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.nav-2 > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-2 > div > a > img {
+    max-width: 120px;
+    padding: 5px;
+}
+
+.nav-2 > div > p {
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: #343434;
+}
+
+/*______Icones da navbar______*/
+.nav-2 > .iconSocial > a {
+    display: block;
+    padding: 0px;
+    margin: 40px;
+    margin-left: 0;
+}
+
+.nav-2 > .iconSocial > a > img {
+    display: block;
+    max-width: 20px;
+    padding: 0;
+    margin: 0 auto;
+    color: #343434;
+}
+
+/*_____Mobile Menu_____*/
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/*_____Parte do Bem vindo_____*/
+/*____ícones redondos____*/
+.iconesRedondos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+}
+
+.iconesRedondos > a {
+    text-decoration: none;
+}
+
+.iconesRedondos > a > figure {
+    display: block;
+    margin: 7px;
+}
+
+.iconesRedondos > a > figure > img {
+    max-width: 100px;
+    border-radius: 70px;
+    border: 3px solid gray;
+}
+
+.iconesRedondos > a > figure > p {
+    display: block;
+    font-size: 0.9rem;
+    color: #212529;
+    text-align: center;
+    max-width: 80px;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.3rem;
+}
+
+/*_____Banner Bem Vindo_____*/
+.banner_BemVindo {
+    display: flex;  
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -1px 10px 30px rgb(209, 209, 209);
+    max-width: 70%;
+    justify-content: center;
+    margin: auto;
+}
+
+.banner_BemVindo > img{
+    max-width: 70%; 
+    border-radius: 20px;
+}
+
+.banner_BemVindo > div {
+    padding: 50px;
+}
+
+.banner_BemVindo > div > p {
+    letter-spacing: 0.05rem;
+    line-height: 1.6rem;
+    text-align: justify;
+}
+
+/*______Footer 1______*/
+.section_4 {
+    background-color: #212529;
+    margin-top: 50px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.section_4 > .desenvolve {
+    padding: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.section_4 > .desenvolve > .textoFooter1 {
+    padding-top: 10px;
+    color: white;
+}
+
+.section_4 > .desenvolve > .textoFooter1 > p {
+    display: block;
+    text-align: justify;
+    margin-top: -10px;
+}
+
+/*_____Icone Instagram_____*/
+.section_4 > .desenvolve > .iconInsta {
+    display: block;
+    float: left;
+    margin: 20px;
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius: 80px;
+    padding: 10px;
+}
+
+.section_4 > .desenvolve > .iconInsta > img {
+    max-width: 60px;
+}
+
+/*_____Fotos que dão zoom_____*/
+.divZoom {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.divZoom > .imgZoom {
+    position: relative;
+}
+
+.divZoom > .imgZoom > a {
+    display: block;
+    overflow: hidden;
+}
+
+.divZoom > .imgZoom > a > figure {
+    margin: 5px;
+    overflow: hidden;
+}
+
+.divZoom > .imgZoom > a > figure > img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: 40%;
+    max-width: 250px;
+    max-height: 280px;
+    transition: all 1.8s;
+    z-index: 0;
+}
+
+.divZoom > .imgZoom > .camera {
+    max-width: 25px;
+    position: absolute;
+    top: 2%;
+    left: 85%;
+}
+
+.divZoom > .imgZoom > a > figure > .img-z:hover{
+    transform: scale(1.1);
+}
+
+/*_____Ícones dentro das figuras que dão Zoom_____*/
+.divZoom > .linksShow {
+    display: none;
+    position: relative;
+}
+
+.divZoom > .linksShow > a > img{
+    max-width: 40px;
+    transition: all 0.4s;
+    opacity: 0.5;
+    top: 77%;
+    border: 1px white solid;
+    border-radius: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.divZoom > .linksShow > a > .imgFacebook {
+    position: absolute;
+    left: -10vw;
+    padding: 5px;
+    max-width: 20px;
+}
+
+.divZoom > .linksShow > a > .imgTwitter {
+    position: absolute;
+    left: -7.8vw;
+    padding: 5px;
+    max-width: 20px;
+}
+
+.divZoom > .linksShow > a > .pinterestIcon{
+    position: absolute;
+    left: -5.6vw;
+    max-width: 31px;
+    padding: 5px;
+    max-width: 20px;
+}
+
+/*___JS___*/
+.showIcon {
+    display: block !important;
+}
+/*________*/
+
+.divZoom > .linksShow > a {
+    text-decoration: none;
+}
+
+.divZoom > .linksShow > a > img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/*_____Botão do instagram_____*/
+.btn-Insta {
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.btn-Insta > button {
+    background-color: #084775;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 auto;
+    border: none;
+}
+
+.btn-Insta > button > a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.btn-Insta > button > a > img {
+    max-width: 40px;
+}
+
+.btn-Insta > button > a > p {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/*_____Serviços_____*/
+.section_2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    padding-top: 2px;
+    padding-bottom: 4%;
+}
+
+.section_2 > a > figure {
+   margin: 0px;
+   padding: 7px;
+}
+  
+.section_2 > a > figure >img {
+    max-width: 270px;
+    border-top: 1px solid rgb(226, 226, 226);
+    border-radius: 10px;
+    box-shadow: -1px 7px 14px rgb(226, 226, 226);
+}
+
+/*___Título Serviços___*/
+.servicos {
+    display: block;
+    margin: 0 auto;
+    margin-left: 15%;
+    margin-top: 4%;
+    margin-bottom: 1.5%;
+    text-align: left;
+
+}
+
+.servicos > h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/*_____Fale Conosco_____*/
+.section_3 {
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.section_3 > h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.section_3 > .divNumero {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -1px 7px 14px rgb(226, 226, 226);
+    border-top: 1px solid rgb(226, 226, 226);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+}
+
+.section_3 > .divNumero > .numeros {
+    display: flex;
+    margin: auto;
+}
+
+.section_3 > .divNumero > div > p {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: -3px;
+    padding: 0;
+}
+
+.section_3 > .divNumero > div > img {
+    display: flex;
+    max-width: 27px;
+    max-height: 27px;
+    margin-right: 15px;
+
+}
+
+/*______Footer 2______*/
+.section_5 {
+    padding: 0;
+    margin: 0 auto;
+    background-color: #353C50;
+    display: flex;
+    padding-bottom: 35px;
+}
+
+/*___div 1 - Desenvolve 2___*/
+.section_5 > .desenvolve2 {
+    margin: auto;
+    padding-top: 50px;
+    color: white;
+}
+
+.section_5 > .desenvolve2 > p {
+    line-height: 1.5rem;
+    margin-top: 20px;
+}
+
+.section_5 > .desenvolve2 > img {
+    max-width: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*____Icone do facebook e do instagram____*/
+.section_5 > .desenvolve2 > .iconSocial2 {
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 3%;
+}
+
+.section_5 > .desenvolve2 > .iconSocial2 > a > img{
+    max-width: 30px;
+}
+
+/*___Lista___*/
+.desenvolve2Lista {
+    margin: 0 auto;
+    padding-top: 20px;
+    color: white;
+    display: flex;
+}
+
+.desenvolve2Lista > .divLista {
+    margin: 20px;
+}
+
+.desenvolve2Lista > .divLista > h2 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.desenvolve2Lista > .divLista > ul > li {
+    margin: 10px;
+    font-size: 0.8rem;
+}
+
+.desenvolve2Lista > .divLista > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+
+/*____Último Footer____*/
+footer {
+    padding: 12px;
+    background-color: #3C3C3C;
+}
+
+footer > div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer > div > a {
+    color: white;
+    text-decoration: none;
+}
+
+footer > div > a:hover {
+    color: rgb(34, 76, 190);
+}
+
+/*______Responsividade_____*/
+/*Dispositivo móvel menor*/
+@media (max-width: 320px) {
+    /*_____Mobile Menu_____*/
+    .nav-1 > .options-Menu {
+        display: none;
+    }
+
+    .nav-1 > .btn-Login {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon > button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon > button > img {
+        max-width: 20px;
+        margin: 10px;
+    }
+
+    /*_____Opções do Menu_____*/
+
+    .mobile-menu {
+        margin-left: 20%;
+    }
+
+    .mobile-menu > .options-Menu {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5rem;
+        align-items: center;
+    }
+
+    .mobile-menu > .options-Menu > li {
+        list-style: none;
+        padding: 0.6rem;
+    }
+
+    .mobile-menu > .options-Menu > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    /*_____Botão de Login_____*/
+    .mobile-menu > .btn-Login {
+        display: flex;
+        margin: 12px;
+        padding: 0.1rem;
+        width: 100%;
+    }
+
+    .mobile-menu > .btn-Login > img {
+        margin: 0;
+        margin-left: 32%;
+        padding-top: 0.3rem;
+    }
+
+    .mobile-menu > .btn-Login > a {
+        margin: 0;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+
+    /*______JS______*/
+    .open {
+        display: block;
+    }
+
+    /*______Primeira Nav______*/
+    .nav-1 > .parte-principal{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10%;
+    }
+    
+    .nav-1 > .parte-principal > a, p {
+        padding: 5px;
+        margin: auto;
+    }
+    
+    .nav-1 > .parte-principal > a > img {
+        max-width: 21px;
+    }
+    
+    .nav-1 > .parte-principal >  p {
+        color: white;
+        font-size: 0.65rem;
+    }
+
+    /*______Segunda Nav______*/
+    .nav-2 > div > a {
+        display: flex;
+        padding: 2px;
+    }
+
+    .nav-2 > div > a > img {
+        max-width: 60px;
+        padding: 0px;
+    }
+
+    .nav-2 > div > p {
+        padding: 0;
+        font-weight: 500;
+        font-size: 0.8rem;
+        display: flex;
+    }
+
+    /*______Icones da navbar______*/
+    .nav-2 > .iconSocial > a {
+        display: flex;
+        padding: 0px;
+        margin: 1px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-2 > .iconSocial > a > img {
+        display: flex;
+        max-width: 9px;
+        padding: 0px;
+        margin: 0px auto;
+        color: #343434;
+    }
+
+    .nav-2 > .iconSocial {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*_______Parte do Bem vindo_______*/
+    /*____ícones redondos____*/
+    .iconesRedondos {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .iconesRedondos > a {
+        text-decoration: none;
+    }
+
+    .iconesRedondos > a > figure {
+        display: block;
+        margin: 7px;
+    }
+
+    .iconesRedondos > a > figure > img {
+        max-width: 50px;
+        border-radius: 70px;
+        border: 3px solid gray;
+    }
+
+    .iconesRedondos > a > figure > p {
+        display: block;
+        font-size: 0.6rem;
+        color: #212529;
+        text-align: center;
+        max-width: 50px;
+        margin: 0 auto;
+        padding: 0;
+        line-height: 1rem;
+    }
+    /*_____Banner Bem Vindo_____*/
+    .banner_BemVindo {
+        display: flex;
+        flex-wrap: wrap;  
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 10px 70px rgb(209, 209, 209);
+        max-width: 70%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .banner_BemVindo > img{
+        max-width: 100%; 
+        border-radius: 20px;
+    }
+
+    .banner_BemVindo > div {
+        padding: 20px;
+    }
+
+    .banner_BemVindo > div > p {
+        letter-spacing: 0.05rem;
+        line-height: 1rem;
+        text-align: justify;
+        font-size: 0.6rem;
+    }
+
+    .banner_BemVindo > div > h2 {
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+    /*______Footer 1______*/
+    .section_4 {
+        background-color: #212529;
+        margin-top: 50px;
+        border-bottom: 1px solid rgb(209, 209, 209);
+    }
+
+    .section_4 > .desenvolve {
+        padding: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .section_4 > .desenvolve > .textoFooter1 {
+        padding-top: 10px;
+        color: white;
+    }
+
+    .section_4 > .desenvolve > .textoFooter1 > h3 {
+        font-size: 0.8rem;
+    }
+
+    .section_4 > .desenvolve > .textoFooter1 > p {
+        display: block;
+        text-align: justify;
+        margin-top: -10px;
+        font-size: 0.6rem;
+    }
+
+    /*_____Icone Instagram_____*/
+    .section_4 > .desenvolve > .iconInsta {
+        display: block;
+        float: left;
+        margin-top: 40px;
+        margin-right: 20px;
+        border: 1px solid white;
+        border-radius: 80px;
+        padding: 4px;
+    }
+
+    .section_4 > .desenvolve > .iconInsta > img {
+        max-width: 40px;
+    }
+
+    /*_____Fotos que dão zoom_____*/
+    .divZoom {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .divZoom > .imgZoom {
+        position: relative;
+    }
+
+    .divZoom > .imgZoom > a {
+        display: block;
+        overflow: hidden;
+    }
+
+    .divZoom > .imgZoom > a > figure {
+        margin: 5px;
+        overflow: hidden;
+    }
+
+    .divZoom > .imgZoom > a > figure > img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: 40%;
+        max-width: 100px;
+        max-height: 250px;
+        transition: all 1.8s;
+        z-index: 0;
+    }
+
+    .divZoom > .imgZoom > .camera {
+        max-width: 16px;
+        position: absolute;
+        top: 5%;
+        left: 76%;
+    }
+
+    .divZoom > .imgZoom > a > figure:hover img {
+        transform: scale(1.1);
+    }
+
+    /*_____Ícones dentro das figuras que dão Zoom_____*/
+    .divZoom > .linksShow {
+        display: block;
+        position: relative;
+    }
+
+    .divZoom > .linksShow > a > img{
+        max-width: 18px;
+        transition: all 0.4s;
+        opacity: 0.5;
+        top: 75%;
+        border: 1px white solid;
+        border-radius: 200px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .divZoom > .linksShow > a > .imgFacebook {
+        position: absolute;
+        left: -25vw;
+        padding: 3px;
+        max-width: 8px;
+    }
+
+    .divZoom > .linksShow > a > .imgTwitter {
+        position: absolute;
+        left: -18vw;
+        padding: 3px;
+        max-width: 8px;
+    }
+
+    .divZoom > .linksShow > a > .pinterestIcon{
+        position: absolute;
+        left: -11.7vw;
+        max-width: 31px;
+        padding: 3px;
+        max-width: 8px;
+    }
+
+    /*___JS___*/
+    .showIcon {
+        display: block !important;
+    }
+    /*________*/
+
+    .divZoom > .linksShow > a {
+        text-decoration: none;
+    }
+
+    .divZoom > .linksShow > a > img:hover{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    
+    /*_____Botão do instagram_____*/
+    .btn-Insta {
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn-Insta > button {
+        background-color: #084775;
+        border-radius: 10px;
+        display: flex;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .btn-Insta > button > a {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+    }
+
+    .btn-Insta > button > a > img {
+        max-width: 30px;
+    }
+
+    .btn-Insta > button > a > p {
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    /*_____Serviços_____*/
+    .section_2 {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 2px;
+        padding-bottom: 4%;
+    }
+
+    .section_2 > a > figure {
+        margin: 0px;
+        padding: 3px;
+    }
+    
+    .section_2 > a > figure >img {
+        max-width: 92px;
+        border-top: 1px solid rgb(226, 226, 226);
+        border-radius: 10px;
+        box-shadow: -1px 7px 14px rgb(226, 226, 226);
+    }
+
+    /*___Título Serviços___*/
+    .servicos {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10%;
+        margin-bottom: 1.5%;
+        text-align: left;
+
+    }
+
+    .servicos > h2 {
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    /*_____Fale Conosco_____*/
+    .section_3 {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+    .section_3 > h2 {
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .section_3 > .divNumero {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: -1px 7px 14px rgb(226, 226, 226);
+        border-top: 1px solid rgb(226, 226, 226);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .section_3 > .divNumero > .numeros {
+        display: flex;
+        margin: auto;
+    }
+
+    .section_3 > .divNumero > div > p {
+        display: flex;
+        font-size: 0.7rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: -2px;
+        padding: 0;
+    }
+
+    .section_3 > .divNumero > div > img {
+        display: flex;
+        max-width: 12px;
+        max-height: 12px;
+        margin-right: 5px;
+
+    }
+
+    /*______Footer 2______*/
+    .section_5 {
+        padding: 0;
+        margin: 0 auto;
+        background-color: #353C50;
+        display: flex;
+        padding-bottom: 35px;
+        flex-wrap: wrap;
+    }
+
+    /*___div 1 - Desenvolve 2___*/
+    .section_5 > .desenvolve2 {
+        margin: auto;
+        padding-top: 40px;
+        color: white;
+        display: block;
+    }
+
+    .section_5 > .desenvolve2 > p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+        margin-top: 10px;
+    }
+
+    .section_5 > .desenvolve2 > img {
+        max-width: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /*____Icone do facebook e do instagram____*/
+    .section_5 > .desenvolve2 > .iconSocial2 {
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: 2%;
+    }
+
+    .section_5 > .desenvolve2 > .iconSocial2 > a > img{
+        max-width: 20px;
+    }
+
+    /*___Lista___*/
+    .desenvolve2Lista {
+        margin: 0 auto;
+        padding-top: 20px;
+        color: white;
+        display: flex;
+    }
+
+    .desenvolve2Lista > .divLista {
+        margin: 0px;
+    }
+
+    .desenvolve2Lista > .divLista > h2 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 0.7rem;
+    }
+
+    .desenvolve2Lista > .divLista > ul > li {
+        margin: 7px;
+        font-size: 0.6rem;
+    }
+
+    .desenvolve2Lista > .divLista > ul > li > a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.6rem;
+    }
+
+    /*____Último Footer____*/
+    footer {
+        padding: 0px;
+        padding-bottom: 7px;
+        background-color: #3C3C3C;
+    }
+
+    footer > div {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer > div > a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.35rem;
+    }
+
+    footer > div > a:hover {
+        color: rgb(34, 76, 190);
+    }
+}
+
+/*Dispositivo móvel Médio*/
+@media (min-width: 321px) and (max-width: 375px) {
+    /*_____Mobile Menu_____*/
+    .nav-1 > .options-Menu {
+        display: none;
+    }
+
+    .nav-1 > .btn-Login {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon > button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon > button > img {
+        max-width: 20px;
+        margin: 10px;
+    }
+
+    /*_____Opções do Menu_____*/
+
+    .mobile-menu {
+        margin-left: 23%;
+    }
+
+    .mobile-menu > .options-Menu {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5rem;
+        align-items: center;
+
+    }
+
+    .mobile-menu > .options-Menu > li {
+        list-style: none;
+        padding: 0.6rem;
+    }
+
+    .mobile-menu > .options-Menu > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    /*_____Botão de Login_____*/
+    .mobile-menu > .btn-Login {
+        display: flex;
+        margin: 12px;
+        padding: 0.1rem;
+        width: 100%;
+    }
+
+    .mobile-menu > .btn-Login > img {
+        margin: 0;
+        margin-left: 28%;
+        padding-top: 0.3rem;
+    }
+
+    .mobile-menu > .btn-Login > a {
+        margin: 0;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+
+    /*______JS______*/
+    .open {
+        display: block;
+    }
+    /*______Primeira Nav______*/
+    .nav-1>.parte-principal {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10%;
+    }
+
+    .nav-1>.parte-principal>a,p {
+        padding: 5px;
+        margin: auto;
+    }
+
+    .nav-1>.parte-principal>a>img {
+        max-width: 25px;
+    }
+
+    .nav-1>.parte-principal>p {
+        color: white;
+        font-size: 0.7rem;
+    }
+    
+    /*______Segunda Nav______*/
+    .nav-2 > div > a {
+        display: flex;
+        padding: 2px;
+    }
+    
+    .nav-2 > div > a > img {
+        max-width: 70px;
+        padding: 0px;
+    }
+    
+    .nav-2 > div > p {
+        font-weight: 500;
+        padding: 0;
+        font-size: 0.82rem;
+        display: flex;
+    }
+
+    /*______Icones da navbar______*/
+    .nav-2 > .iconSocial > a {
+        display: flex;
+        padding: 0px;
+        margin: 1px;
+        margin-right: 8px;
+        margin-top: 13px;
+    }
+    
+    .nav-2 > .iconSocial > a > img {
+        display: flex;
+        max-width: 9px;
+        padding: 0px;
+        margin: 0px auto;
+        color: #343434;
+    }
+    
+    .nav-2 > .iconSocial {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /*_______Parte do Bem vindo_______*/
+    /*____ícones redondos____*/
+    .iconesRedondos {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .iconesRedondos > a {
+        text-decoration: none;
+    }
+
+    .iconesRedondos > a > figure {
+        display: block;
+        margin: 7px;
+    }
+
+    .iconesRedondos > a > figure > img {
+        max-width: 50px;
+        border-radius: 70px;
+        border: 3px solid gray;
+    }
+
+    .iconesRedondos > a > figure > p {
+        display: block;
+        font-size: 0.7rem;
+        color: #212529;
+        text-align: center;
+        max-width: 50px;
+        margin: 0 auto;
+        padding: 0;
+        line-height: 1rem;
+    }
+    /*_____Banner Bem Vindo_____*/
+    .banner_BemVindo {
+        display: flex;
+        flex-wrap: wrap;  
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 10px 70px rgb(209, 209, 209);
+        max-width: 70%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .banner_BemVindo > img{
+        max-width: 100%; 
+        border-radius: 20px;
+    }
+
+    .banner_BemVindo > div {
+        padding: 20px;
+    }
+
+    .banner_BemVindo > div > p {
+        letter-spacing: 0.05rem;
+        line-height: 1rem;
+        text-align: justify;
+        font-size: 0.7rem;
+    }
+
+    .banner_BemVindo > div > h2 {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+        /*______Footer 1______*/
+    .section_4 {
+        background-color: #212529;
+        margin-top: 50px;
+        border-bottom: 1px solid rgb(209, 209, 209);
+    }
+
+    .section_4 > .desenvolve {
+        padding: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .section_4 > .desenvolve > .textoFooter1 {
+        padding-top: 10px;
+        color: white;
+    }
+
+    .section_4 > .desenvolve > .textoFooter1 > h3 {
+        font-size: 0.9rem;
+    }
+
+    .section_4 > .desenvolve > .textoFooter1 > p {
+        display: block;
+        text-align: justify;
+        margin-top: -10px;
+        font-size: 0.7rem;
+    }
+
+    /*_____Icone Instagram_____*/
+    .section_4 > .desenvolve > .iconInsta {
+        display: block;
+        float: left;
+        margin-top: 50px;
+        margin-right: 20px;
+        border: 1px solid white;
+        border-radius: 80px;
+        padding: 5px;
+    }
+
+    .section_4 > .desenvolve > .iconInsta > img {
+        max-width: 40px;
+    }
+
+    /*_____Fotos que dão zoom_____*/
+    .divZoom {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .divZoom > .imgZoom {
+        position: relative;
+    }
+
+    .divZoom > .imgZoom > a {
+        display: block;
+        overflow: hidden;
+    }
+
+    .divZoom > .imgZoom > a > figure {
+        margin: 5px;
+        overflow: hidden;
+    }
+
+    .divZoom > .imgZoom > a > figure > img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: 40%;
+        max-width: 120px;
+        max-height: 250px;
+        transition: all 1.8s;
+        z-index: 0;
+    }
+
+    .divZoom > .imgZoom > .camera {
+        max-width: 16px;
+        position: absolute;
+        top: 5%;
+        left: 77%;
+    }
+
+    .divZoom > .imgZoom > a > figure:hover img {
+        transform: scale(1.1);
+    }
+
+    /*_____Ícones dentro das figuras que dão Zoom_____*/
+    .divZoom > .linksShow {
+        display: block;
+        position: relative;
+    }
+
+    .divZoom > .linksShow > a > img{
+        max-width: 18px;
+        transition: all 0.4s;
+        opacity: 0.6;
+        top: 77%;
+        border: 1px white solid;
+        border-radius: 200px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .divZoom > .linksShow > a > .imgFacebook {
+        position: absolute;
+        left: -25vw;
+        padding: 3px;
+        max-width: 8px;
+    }
+
+    .divZoom > .linksShow > a > .imgTwitter {
+        position: absolute;
+        left: -19.5vw;
+        padding: 3px;
+        max-width: 8px;
+    }
+
+    .divZoom > .linksShow > a > .pinterestIcon{
+        position: absolute;
+        left: -14vw;
+        max-width: 31px;
+        padding: 3px;
+        max-width: 8px;
+    }
+
+    /*___JS___*/
+    .showIcon {
+        display: block !important;
+    }
+    /*________*/
+
+    .divZoom > .linksShow > a {
+        text-decoration: none;
+    }
+
+    /*_____Botão do instagram_____*/
+    .btn-Insta {
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn-Insta > button {
+        background-color: #084775;
+        border-radius: 10px;
+        display: flex;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .btn-Insta > button > a {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+    }
+
+    .btn-Insta > button > a > img {
+        max-width: 30px;
+    }
+
+    .btn-Insta > button > a > p {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    /*_____Serviços_____*/
+    .section_2 {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 2px;
+        padding-bottom: 4%;
+    }
+
+    .section_2 > a > figure {
+        margin: 0px;
+        padding: 3px;
+    }
+    
+    .section_2 > a > figure >img {
+        max-width: 92px;
+        border-top: 1px solid rgb(226, 226, 226);
+        border-radius: 10px;
+        box-shadow: -1px 7px 14px rgb(226, 226, 226);
+    }
+
+    /*___Título Serviços___*/
+    .servicos {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10%;
+        margin-bottom: 1.5%;
+        text-align: left;
+
+    }
+
+    .servicos > h2 {
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    /*_____Fale Conosco_____*/
+    .section_3 {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+    .section_3 > h2 {
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .section_3 > .divNumero {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: -1px 7px 14px rgb(226, 226, 226);
+        border-top: 1px solid rgb(226, 226, 226);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .section_3 > .divNumero > .numeros {
+        display: flex;
+        margin: auto;
+    }
+
+    .section_3 > .divNumero > div > p {
+        display: flex;
+        font-size: 0.7rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: -2px;
+        padding: 0;
+    }
+
+    .section_3 > .divNumero > div > img {
+        display: flex;
+        max-width: 12px;
+        max-height: 12px;
+        margin-right: 5px;
+    }
+
+    /*______Footer 2______*/
+    .section_5 {
+        padding: 0;
+        margin: 0 auto;
+        background-color: #353C50;
+        display: flex;
+        padding-bottom: 35px;
+        flex-wrap: wrap;
+    }
+
+    /*___div 1 - Desenvolve 2___*/
+    .section_5 > .desenvolve2 {
+        margin: auto;
+        padding-top: 40px;
+        color: white;
+        display: block;
+    }
+
+    .section_5 > .desenvolve2 > p {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        margin-top: 10px;
+    }
+
+    .section_5 > .desenvolve2 > img {
+        max-width: 170px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /*____Icone do facebook e do instagram____*/
+    .section_5 > .desenvolve2 > .iconSocial2 {
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: 2%;
+    }
+
+    .section_5 > .desenvolve2 > .iconSocial2 > a > img{
+        max-width: 25px;
+    }
+
+    /*___Lista___*/
+    .desenvolve2Lista {
+        margin: 0 auto;
+        padding-top: 20px;
+        color: white;
+        display: flex;
+    }
+
+    .desenvolve2Lista > .divLista {
+        margin: 0px;
+    }
+
+    .desenvolve2Lista > .divLista > h2 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 0.9rem;
+    }
+
+    .desenvolve2Lista > .divLista > ul > li {
+        margin: 7px;
+        font-size: 0.7rem;
+    }
+
+    .desenvolve2Lista > .divLista > ul > li > a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    /*____Último Footer____*/
+    footer {
+        padding: 0px;
+        padding-bottom: 7px;
+        background-color: #3C3C3C;
+    }
+
+    footer > div {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer > div > a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.4rem;
+    }
+
+    footer > div > a:hover {
+        color: rgb(34, 76, 190);
+    }
+}
+
+/*Dispositivo móvel grande*/
+@media (min-width: 376px) and (max-width: 425px) {
+    /*_____Mobile Menu_____*/
+    .nav-1 > .options-Menu {
+        display: none;
+    }
+
+    .nav-1 > .btn-Login {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon > button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon > button > img {
+        max-width: 20px;
+        margin: 10px;
+    }
+
+    /*_____Opções do Menu_____*/
+
+    .mobile-menu {
+        margin-left: 23%;
+    }
+
+    .mobile-menu > .options-Menu {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5rem;
+        align-items: center;
+    }
+
+    .mobile-menu > .options-Menu > li {
+        list-style: none;
+        padding: 0.6rem;
+    }
+
+    .mobile-menu > .options-Menu > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    /*_____Botão de Login_____*/
+    .mobile-menu > .btn-Login {
+        display: flex;
+        margin: 12px;
+        padding: 0.1rem;
+        width: 100%;
+    }
+
+    .mobile-menu > .btn-Login > img {
+        margin: 0;
+        margin-left: 36%;
+        padding-top: 0.3rem;
+    }
+
+    .mobile-menu > .btn-Login > a {
+        margin: 0;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+
+    /*______JS______*/
+    .open {
+        display: block;
+    }
+       
+    /*______Primeira Nav______*/
+    .nav-1 > .parte-principal {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10%;
+    }
+
+    .nav-1 > .parte-principal > a ,p {
+        padding: 5px;
+        margin: auto;
+    }
+
+    .nav-1 > .parte-principal > a > img {
+        max-width: 25px;
+    }
+
+    .nav-1 > .parte-principal > p {
+        color: white;
+        font-size: 0.7rem;
+    }
+    
+    /*______Segunda Nav______*/
+    .nav-2 > div > a {
+        display: flex;
+        padding: 3px;
+    }
+    
+    .nav-2 > div > a > img {
+        max-width: 80px;
+        padding: 0px;
+    }
+    
+    .nav-2 > div > p {
+        font-weight: 500;
+        padding: 0;
+        font-size: 0.9rem;
+        display: flex;
+    }
+
+    /*______Icones da navbar______*/
+    .nav-2 > .iconSocial > a {
+        display: flex;
+        padding: 0px;
+        margin: 1px;
+        margin-right: 25px;
+        margin-top: 13px;
+    }
+    
+    .nav-2 > .iconSocial > a > img {
+        display: flex;
+        max-width: 12px;
+        padding: 0px;
+        margin: 0px auto;
+        color: #343434;
+    }
+    
+    .nav-2 > .iconSocial {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /*_______Parte do Bem vindo_______*/
+    /*____ícones redondos____*/
+    .iconesRedondos {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .iconesRedondos > a {
+        text-decoration: none;
+    }
+
+    .iconesRedondos > a > figure {
+        display: block;
+        margin: 7px;
+    }
+
+    .iconesRedondos > a > figure > img {
+        max-width: 50px;
+        border-radius: 70px;
+        border: 3px solid gray;
+    }
+
+    .iconesRedondos > a > figure > p {
+        display: block;
+        font-size: 0.7rem;
+        color: #212529;
+        text-align: center;
+        max-width: 50px;
+        margin: 0 auto;
+        padding: 0;
+        line-height: 1rem;
+    }
+    /*_____Banner Bem Vindo_____*/
+    .banner_BemVindo {
+        display: flex;
+        flex-wrap: wrap;  
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 1px 10px 70px rgb(209, 209, 209);
+        max-width: 70%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .banner_BemVindo > img{
+        max-width: 100%; 
+        border-radius: 20px;
+    }
+
+    .banner_BemVindo > div {
+        padding: 20px;
+    }
+
+    .banner_BemVindo > div > p {
+        letter-spacing: 0.05rem;
+        line-height: 1rem;
+        text-align: justify;
+        font-size: 0.7rem;
+    }
+
+    .banner_BemVindo > div > h2 {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 10px;
+    }
+
+        /*______Footer 1______*/
+    .section_4 {
+        background-color: #212529;
+        margin-top: 50px;
+        border-bottom: 1px solid rgb(209, 209, 209);
+    }
+
+    .section_4 > .desenvolve {
+        padding: 10px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .section_4 > .desenvolve > .textoFooter1 {
+        padding-top: 10px;
+        color: white;
+    }
+
+    .section_4 > .desenvolve > .textoFooter1 > h3 {
+        font-size: 0.9rem;
+    }
+
+    .section_4 > .desenvolve > .textoFooter1 > p {
+        display: block;
+        text-align: justify;
+        margin-top: -10px;
+        font-size: 0.7rem;
+    }
+
+    /*_____Icone Instagram_____*/
+    .section_4 > .desenvolve > .iconInsta {
+        display: block;
+        float: left;
+        margin-top: 38px;
+        margin-right: 20px;
+        border: 1px solid white;
+        border-radius: 80px;
+        padding: 4px;
+    }
+
+    .section_4 > .desenvolve > .iconInsta > img {
+        max-width: 50px;
+    }
+
+    /*_____Fotos que dão zoom_____*/
+    .divZoom {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .divZoom > .imgZoom {
+        position: relative;
+    }
+
+    .divZoom > .imgZoom > a{
+        display: block;
+        overflow: hidden;
+    }
+
+    .divZoom > .imgZoom > a > figure {
+        margin: 5px;
+        overflow: hidden;
+    }
+
+    .divZoom > .imgZoom > a > figure > img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        object-position: 40%;
+        max-width: 140px;
+        max-height: 250px;
+        transition: all 1.8s;
+        z-index: 0;
+    }
+
+    .divZoom > .imgZoom > .camera {
+        max-width: 16px;
+        position: absolute;
+        top: 5%;
+        left: 82%;
+    }
+
+    .divZoom > .imgZoom > a > figure:hover img {
+        transform: scale(1.1);
+    }
+
+    /*_____Ícones dentro das figuras que dão Zoom_____*/
+    .divZoom > .linksShow {
+        display: block;
+        position: relative;
+    }
+
+    .divZoom > .linksShow > a > img{
+        max-width: 18px;
+        transition: all 0.4s;
+        opacity: 0.6;
+        top: 77%;
+        border: 1px white solid;
+        border-radius: 200px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .divZoom > .linksShow > a > .imgFacebook {
+        position: absolute;
+        left: -28vw;
+        padding: 4.3px;
+        max-width: 10px;
+    }
+
+    .divZoom > .linksShow > a > .imgTwitter {
+        position: absolute;
+        left: -22vw;
+        padding: 4.3px;
+        max-width: 10px;
+    }
+
+    .divZoom > .linksShow > a > .pinterestIcon{
+        position: absolute;
+        left: -16vw;
+        max-width: 31px;
+        padding: 4.3px;
+        max-width: 10px;
+    }
+
+    /*___JS___*/
+    .showIcon {
+        display: block !important;
+    }
+    /*________*/
+
+    .divZoom > .linksShow > a {
+        text-decoration: none;
+    }
+
+    /*_____Botão do instagram_____*/
+    .btn-Insta {
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn-Insta > button {
+        background-color: #084775;
+        border-radius: 10px;
+        display: flex;
+        margin: 0 auto;
+        border: none;
+    }
+
+    .btn-Insta > button > a {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+    }
+
+    .btn-Insta > button > a > img {
+        max-width: 30px;
+    }
+
+    .btn-Insta > button > a > p {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    /*_____Serviços_____*/
+    .section_2 {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+        padding-top: 2px;
+        padding-bottom: 4%;
+    }
+
+    .section_2 > a > figure {
+    margin: 0px;
+    padding: 3px;
+    }
+    
+    .section_2 > a > figure >img {
+        max-width: 110px;
+        border-top: 1px solid rgb(226, 226, 226);
+        border-radius: 10px;
+        box-shadow: -1px 7px 14px rgb(226, 226, 226);
+    }
+
+    /*___Título Serviços___*/
+    .servicos {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10%;
+        margin-bottom: 1.5%;
+        text-align: left;
+
+    }
+
+    .servicos > h2 {
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    /*_____Fale Conosco_____*/
+    .section_3 {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+    .section_3 > h2 {
+        font-family: sans-serif;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .section_3 > .divNumero {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: -1px 7px 14px rgb(226, 226, 226);
+        border-top: 1px solid rgb(226, 226, 226);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .section_3 > .divNumero > .numeros {
+        display: flex;
+        margin: auto;
+    }
+
+    .section_3 > .divNumero > div > p {
+        display: flex;
+        font-size: 0.7rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: -0.5px;
+        padding: 0;
+    }
+
+    .section_3 > .divNumero > div > img {
+        display: flex;
+        max-width: 15px;
+        max-height: 15px;
+        margin-right: 5px;
+    }
+
+    /*______Footer 2______*/
+    .section_5 {
+        padding: 0;
+        margin: 0 auto;
+        background-color: #353C50;
+        display: flex;
+        padding-bottom: 35px;
+        flex-wrap: wrap;
+    }
+
+    /*___div 1 - Desenvolve 2___*/
+    .section_5 > .desenvolve2 {
+        margin: auto;
+        padding-top: 40px;
+        color: white;
+        display: block;
+    }
+
+    .section_5 > .desenvolve2 > p {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        margin-top: 10px;
+    }
+
+    .section_5 > .desenvolve2 > img {
+        max-width: 180px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /*____Icone do facebook e do instagram____*/
+    .section_5 > .desenvolve2 > .iconSocial2 {
+        margin-left: 40%;
+        margin-right: 40%;
+        margin-top: 2%;
+    }
+
+    .section_5 > .desenvolve2 > .iconSocial2 > a > img{
+        max-width: 25px;
+    }
+
+    /*___Lista___*/
+    .desenvolve2Lista {
+        margin: 0 auto;
+        padding-top: 20px;
+        color: white;
+        display: flex;
+    }
+
+    .desenvolve2Lista > .divLista {
+        margin: 0px;
+    }
+
+    .desenvolve2Lista > .divLista > h2 {
+        text-align: center;
+        font-weight: 200;
+        font-size: 0.9rem;
+    }
+
+    .desenvolve2Lista > .divLista > ul > li {
+        margin: 7px;
+        font-size: 0.7rem;
+    }
+
+    .desenvolve2Lista > .divLista > ul > li > a{
+        text-decoration: none;
+        color: white;
+        font-size: 0.7rem;
+    }
+
+    /*____Último Footer____*/
+    footer {
+        padding: 0px;
+        padding-bottom: 7px;
+        background-color: #3C3C3C;
+    }
+
+    footer > div {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer > div > a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.5rem;
+    }
+
+    footer > div > a:hover {
+        color: rgb(34, 76, 190);
+    }
+}
