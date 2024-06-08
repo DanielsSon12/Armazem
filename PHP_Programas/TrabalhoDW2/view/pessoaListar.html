@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Pessoas</title>
+    <link rel="stylesheet" href="estilo.css" /> 
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pessoaFormInserir.html">Inserir novo usuário</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="titulo">Lista de Pessoas</h2>
+        <hr/>
+        <table id="tabelaPessoas">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>Data de Nascimento</th>
+                    <th>CPF</th>
+                    <th>ENDEREÇO</th>
+                    <th>AÇÕES</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+                <!-- Aqui é onde tera a lista de pessoas -->
+            </tbody>
+        </table>
+        <div id="mensagemErro">
+            <!-- Caso ocorra algum erro na hora de listar a pessoam irá aparecer através desta div -->
+        </div>
+    </main>
+    <script src="pessoas-servicejs/listarFetch.js" type="module"></script>
+</body>
+</html>

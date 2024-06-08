@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de arquivos múltiplos</title>
+</head>
+<body>
+    <h3>Envio de arquivos via HTML (arquivos múltiplos)</h3>
+
+    <form action="upload2.php" method="POST" enctype="multipart/form-data">
+        <label for="autor">Autor do envio: </label>
+        <input type="text" name="autor" id="autor"><br>
+
+        <label for="arquivo1">Documento: </label>
+        <!--em name="arquivos[]" com os [] definimos que os dois inputs enviarão arquivos com o mesmo nome(arquivos)-->
+        <!--usando o multiple antes do accept definimos que é possível enviar vários arquivos pdf-->
+        <input type="file" name="arquivos[]" id="arquivo1" multiple accept="application/pdf"><br>
+
+        <label for="arquivo2">Imagem: </label>
+        <input type="file" name="arquivos[]" id="arquivo2" accept="image/*"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

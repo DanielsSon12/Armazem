@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de arquivos</title>
+</head>
+<body>
+    <h3>Envio de arquivos via HTML</h3>
+
+    <!--enctype significa o formato de envio dos arquivos, ou seja, precisa ser multipart/form-data-->
+    <form action="upload1.php" method="POST" enctype="multipart/form-data">
+        
+        <label for="autor">Autor do envio: </label>
+        <input type="text" name="autor" id="autor"><br>
+        
+        <label for="arquivo1">Documento: </label>
+        <!--no accept definimos qual tipo de arquivo queremos, neste caso é um arquivo pdf-->
+        <input type="file" name="arquivo1" id="arquivo1" accept="application/pdf"><br>
+        
+        <label for="arquivo2">Imagem: </label>
+        <!--Nesse accept definimos o tipo imagem pros arquivos recebidos, porém não especificamos a extensão-->
+        <input type="file" name="arquivo2" id="arquivo2" accept="image/*"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <br>
+    <main>
+        <form action="calcular.php" method="post">
+            <label for="numero1">Número 1: </label>
+            <input type="number" name="numero1" min="0" placeholder="número 1" required>
+            <label for="numero2">Número 2: </label>
+            <input type="number" name="numero2" min="0" placeholder="número 2" required>
+
+            <select name="operadores" value="Operadores">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+
+            <input type="submit" value="Calcular">
+            <input type="reset" value="Limpar">
+        </form>
+    </main>
+</body>
+</html>

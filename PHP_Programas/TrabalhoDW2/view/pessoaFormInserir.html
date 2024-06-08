@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pessoaListar.html">Listar pessoas</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="titulo">Inserir pessoa(s)</h2>
+        <hr>
+        <div id="erro">
+            <span id="msgErro"></span>
+            <span id="msgSucesso"></span>
+        </div>
+        <section>
+            <form>
+                <label for="nomePessoa">Nome da pessoa:</label>
+                <input type="text" name="nomePessoa" id="nomePessoa" />
+
+                <label for="dataNPessoa">Data de Nascimento:</label>
+                <input type="date" name="dataNPessoa" id="dataNPessoa" />
+
+                <label for="cpfPessoa">CPF:</label>
+                <input type="text" name="cpfPessoa" id="cpfPessoa" />
+                
+                <label for="enderecoPessoa">Endereço:</label>
+                <input type="text" name="enderecoPessoa" id="enderecoPessoa" />
+
+                <input type="submit" value="Inserir" id="inserir" class="inserir" />
+                <input type="reset" value="Limpar" id="resetar" class="btnLogin"/>
+            </form>
+        </section><br />
+    </main>
+    <footer>
+        <hr />
+        Todos os direitos reservados
+    </footer>
+    <script src="./pessoas-servicejs/inserirFetch.js" type="module"></script>
+</body>
+
+</html>
